@@ -2,8 +2,17 @@ import { hopeTheme } from 'vuepress-theme-hope';
 import { enNavbarConfig, zhNavbarConfig } from './navbar.js';
 import { enSidebarConfig, zhSidebarConfig } from './sidebar.js';
 
+
+
 export default hopeTheme(
   {
+    bundler: {
+    viteOptions: {
+      ssr: {
+        noExternal: ['@waline/client'], // This forces Vite to handle Waline correctly
+      },
+    },
+  },
     // --- 1. Basic Settings ---
     hostname: 'https://waline.js.org',
     favicon: '/favicon.ico',
