@@ -47,7 +47,7 @@ export default hopeTheme(
 
    comment: {
   provider: 'Waline',
-  serverURL: "https://your-waline-url.vercel.app", // MAKE SURE THIS IS YOUR URL
+  serverURL: "https://walinecmnt-docs.vercel.app", // MAKE SURE THIS IS YOUR URL
   tex: false,      // FIX: This stops the "@mathjax/src" error
   pageview: false, // FIX: This stops the "Rollup failed to resolve" error
   locales: {
