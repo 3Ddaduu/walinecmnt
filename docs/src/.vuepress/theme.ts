@@ -45,30 +45,32 @@ export default hopeTheme(
       tasklist: true,
     },
 
-    plugins: {
-      comment: {
-        provider: 'Waline',
-        locales: {
-          '/': {
-            admin: '可爱的管理员',
-            level0: '锻体',
-            level1: '炼气',
-            level2: '筑基',
-            level3: '金丹',
-            level4: '元婴',
-            level5: '化神',
-          },
-          '/en/': {
-            admin: 'GM',
-            level0: 'Dwarves',
-            level1: 'Hobbits',
-            level2: 'Ents',
-            level3: 'Wizards',
-            level4: 'Elves',
-            level5: 'Maiar',
-          },
-        },
-      },
+   comment: {
+  provider: 'Waline',
+  serverURL: "https://your-waline-url.vercel.app", // MAKE SURE THIS IS YOUR URL
+  tex: false,      // FIX: This stops the "@mathjax/src" error
+  pageview: false, // FIX: This stops the "Rollup failed to resolve" error
+  locales: {
+    '/': {
+      admin: '可爱的管理员',
+      level0: '锻体',
+      level1: '炼气',
+      level2: '筑基',
+      level3: '金丹',
+      level4: '元婴',
+      level5: '化神',
+    },
+    '/en/': {
+      admin: 'GM',
+      level0: 'Dwarves',
+      level1: 'Hobbits',
+      level2: 'Ents',
+      level3: 'Wizards',
+      level4: 'Elves',
+      level5: 'Maiar',
+    },
+  },
+},
 
       components: {
         components: ['BiliBili', 'VidStack'],
